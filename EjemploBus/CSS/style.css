@@ -1,0 +1,88 @@
+    body {
+        background-color: rgb(223, 239, 254);
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-fluid{
+        background: #4462c5;
+        padding: 5px;
+        display: flex;
+        text-align: center;
+        display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+        
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    .raya{
+        padding: 150px;
+        height: 621px;
+        float: left;
+        flex-direction: column ;
+        background: white;
+        text-align:left;
+        display: flex;
+        
+    }
+
+    #searchStudent {
+        width: 100%; /* Ancho del 100% para el campo de búsqueda */
+        padding: 10px; /* Espaciado interno para el campo de búsqueda */
+        border: 1px solid #ccc; /* Agrega un borde al campo de búsqueda */
+        border-radius: 5px; /* Bordes redondeados para el campo de búsqueda */
+    }
+    div.raya{
+        text-align: left;
+        margin-left: 2px;
+        justify-content: center; /* Centra horizontalmente (esto es para Flexbox) */
+        align-items: center;
+    }
+    .ta{
+        padding: 85px;
+        flex-direction: row-reverse;
+    }
+    .table{
+        text-align: right;
+        flex-direction: row-reverse;
+        padding: 10px 30px;
+    }
+    .table-primary th {
+        color: black;
+        padding: 10px 50px;
+        
+    }
+
+    button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #0056b3;
+    }
+
+    
+    /* Alinear el botón Agregar al centro */
+    button[type="button"] {
+        align-self: center;
+    }
+    
+    /* Estilo para el botón Eliminar último registro */
+    .btn-danger {
+        background-color: #dc3545;
+    }
+    
+    .btn-danger:hover {
+        background-color: #ac1d2e;
+    }
+    .alertContainer {
+        display: none; /* ocultar un elemento*/ 
+    }

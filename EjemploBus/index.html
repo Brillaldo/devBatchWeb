@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="./JS/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Universidad Modelo</h1>
+            </div>
+            
+        </div>
+    </div>
+
+   <div class="raya">
+    <div class="container alertContainer" id="alertContainer">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success" role="alert">
+                    Se elimino al alumno
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col text-center">
+                <input type="text" id="serchStudent" placeholder="buscar alumno">
+            </div>
+        </div>
+    </div>
+   </div>
+   
+    
+
+    
+   <div class="ta">
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped-columns">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>Nombre <button onclick="ordernarAlfabeticamente()">a-z</button></th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                            <th>Curso</th>
+                            <th>Calificaciones</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col">
+                <section class="new-student">
+                    <input type="text" placeholder="nombre" id="nombre">
+                    <input type="text" placeholder="apellido" id="apellido">
+                    <input type="text" placeholder="edad" id="edad">
+                    <input type="text" placeholder="curso" id="curso">
+                    <input type="calificacion" placeholder="calificacion" id="calificacion">
+                    
+                    <button onclick="agregarAlumno()">Agregar</button>
+                   </section>
+            </div>
+
+            <div class="col">
+                <button class="btn btn-danger" onclick="eliminarUltimoRegistro()">Elimnar ultimo registro</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
